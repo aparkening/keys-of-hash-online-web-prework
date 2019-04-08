@@ -12,19 +12,7 @@ animals = {
 # Return array with every key marching input arguments
 class Hash
   def keys_of(*arguments)
-    
-    self.map { |key, value| arguments.include?(value) ? key : nil }.compact 
-
-    
-  
-=begin    
-    
-    # Cycle through arguments to match with hash
-    arguments.each do |argument|
-      self.each do |key, value|
-        key_array << key if argument == value 
-      end
-    end 
-=end 
+    # Create new array of keys when arguments match hash values. Replace false values with nil and then remove with compact.
+    self.map { |key, value| arguments.include?(value) ? key : nil }.compact
   end
 end
