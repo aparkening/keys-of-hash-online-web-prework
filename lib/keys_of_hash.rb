@@ -13,9 +13,7 @@ animals = {
 class Hash
   def keys_of(*arguments)
     
-    self.map { |key, value|
-       << key if arguments.include?(value)
-    end 
+    self.map { |key, value| arguments.include?(value) }
     
     
 =begin    
