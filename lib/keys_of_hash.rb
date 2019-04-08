@@ -14,19 +14,16 @@ class Hash
   def keys_of(*arguments)
     key_array = []
     
-    # How to access hash?
-    print self 
-
     # Cycle through arguments to match with hash
     arguments.each do |argument|
-      map do |key, value|
+      self.map do |key, value|
         key_array << key if argument == value 
+        puts key
       end
     end 
 
     key_array
     
-    # binding.pry 
   end
 end
 
