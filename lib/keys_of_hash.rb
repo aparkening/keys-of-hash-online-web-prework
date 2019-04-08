@@ -13,13 +13,10 @@ animals = {
 class Hash
   def keys_of(*arguments)
     
-    self.map do |key, value| { arguments.include?(value) ? key : nil}.compact 
+    self.map { |key, value| arguments.include?(value) ? key : nil }.compact 
+
     
-#    ? key : nil }.compact
-    
-    
-    
-    
+  
 =begin    
     
     # Cycle through arguments to match with hash
