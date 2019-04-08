@@ -13,7 +13,11 @@ animals = {
 class Hash
   def keys_of(*arguments)
     
-    self.map { |key, value| arguments.include?(value) return key }
+    self.map do |key, value| 
+      if arguments.include?(value) 
+        key
+      end 
+    end
     
 #    ? key : nil }.compact
     
