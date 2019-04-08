@@ -16,7 +16,7 @@ class Hash
     
     # Cycle through arguments to match with hash
     arguments.each do |argument|
-      self.map do |key, value|
+      self.each do |key, value|
         key_array << key if argument == value 
       end
     end 
