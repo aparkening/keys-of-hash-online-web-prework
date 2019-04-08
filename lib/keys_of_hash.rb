@@ -16,20 +16,17 @@ class Hash
     
     # How to access hash?
     print self 
-    
 
     # Cycle through arguments to match with hash
-=begin
     arguments.each do |argument|
       map do |key, value|
         key_array << key if argument == value 
       end
     end 
-=end    
+
     key_array
     
     # binding.pry 
-    
   end
 end
 
