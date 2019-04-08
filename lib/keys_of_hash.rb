@@ -27,7 +27,8 @@ class Hash
 end
 
 
-#animals.keys_of('Australia')   
+#animals.keys_of('Australia')  
+animals.keys_of('Australia', 'Panama')
 # {a: 1, b: 2, c: 3}.keys_of(1)
 
     
