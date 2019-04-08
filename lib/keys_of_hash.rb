@@ -14,13 +14,22 @@ class Hash
   def keys_of(*arguments)
     key_array = []
     
+    self.each do |key, value|
+      if arguments.include?(value)
+        key_array << key
+      end
+    end 
+    
+    
+=begin    
+    
     # Cycle through arguments to match with hash
     arguments.each do |argument|
       self.each do |key, value|
         key_array << key if argument == value 
       end
     end 
-
+=end 
     key_array
   end
 end
