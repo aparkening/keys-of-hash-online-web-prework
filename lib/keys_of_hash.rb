@@ -26,9 +26,7 @@ class Hash
 end
 
 
-
-
-animals.keys_of('Panama')   
+animals.keys_of('Madagascar')   
 
     
 
