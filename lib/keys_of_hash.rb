@@ -12,9 +12,8 @@ animals = {
 # Return array with every key marching input arguments
 class Hash
   def keys_of(*arguments)
-    key_array = []
     
-    self.each do |key, value|
+    self.map do |key, value|
       key_array << key if arguments.include?(value)
     end 
     
@@ -28,6 +27,5 @@ class Hash
       end
     end 
 =end 
-    key_array
   end
 end
