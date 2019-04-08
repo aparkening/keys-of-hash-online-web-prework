@@ -21,7 +21,6 @@ class Hash
       end
     end 
 
-    binding.pry 
     key_array
   end
 end
