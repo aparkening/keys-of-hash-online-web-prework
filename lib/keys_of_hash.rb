@@ -21,14 +21,14 @@ class Hash
       end
     end 
 
-  binding.pry 
+    # binding.pry 
     key_array
   end
 end
 
 
 #animals.keys_of('Australia')   
-{a: 1, b: 2, c: 3}.keys_of(1)
+# {a: 1, b: 2, c: 3}.keys_of(1)
 
     
 
