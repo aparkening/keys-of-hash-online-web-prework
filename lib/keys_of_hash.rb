@@ -18,14 +18,15 @@ class Hash
     arguments.each do |argument|
       self.map do |key, value|
         key_array << key if argument == value 
-        puts key
       end
     end 
 
     key_array
-    
   end
 end
+
+
+
 
 animals.keys_of('Panama')   
 
