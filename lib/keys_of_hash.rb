@@ -15,9 +15,7 @@ class Hash
     key_array = []
     
     self.each do |key, value|
-      if arguments.include?(value)
-        key_array << key
-      end
+      key_array << key if arguments.include?(value)
     end 
     
     
