@@ -16,8 +16,11 @@ class Hash
     self.map do |key, value| 
       if arguments.include?(value) 
         key
+      else 
+        nil
       end 
-    end
+    end.compact
+    
     
 #    ? key : nil }.compact
     
